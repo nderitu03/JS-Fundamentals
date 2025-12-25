@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><title>CSS FizzBuzzShit</title><style>
+body{margin:0;padding:50px;background:#111;color:#0f0;font-family:monospace;font-size:18px;display:grid;place-items:center;height:100vh;gap:10px;}#grid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;max-width:600px;}.cell{width:80px;height:80px;background:#333;border:2px solid #555;display:grid;place-items:center;font-weight:bold;font-size:16px;transition:all .1s;}.cell:hover{transform:scale(1.2) rotate(360deg);filter:hue-rotate(180deg);}
+/* FIZZBUZZ SELECTORS FROM HELL - NO JS BITCH */
+.cell:nth-child(3n){background:#f90;color:#000;} /* Fizz every 3 */
+.cell:nth-child(3n):after{content:"FIZZ ";} /* but :after hack */
+.cell:nth-child(5n){background:#09f;color:#fff;} /* Buzz every 5 */
+.cell:nth-child(5n):after{content:"BUZZ ";}
+.cell:nth-child(15n){background:#f0f;color:#fff;} /* FizzBuzz every 15 */
+.cell:nth-child(15n):after{content:"FIZZBUZZ ";}
+/* INLINE NUMBERS - COPYPASTE 36 TIMES LMAO */
+.cell:nth-child(1):before{content:"1";}.cell:nth-child(2):before{content:"2";}.cell:nth-child(4):before{content:"4";}.cell:nth-child(7):before{content:"7";}.cell:nth-child(8):before{content:"8";}.cell:nth-child(11):before{content:"11";}.cell:nth-child(13):before{content:"13";}.cell:nth-child(14):before{content:"14";}.cell:nth-child(16):before{content:"16";} /* ... you get it, paste this shit 36x manually for "shitty" points */
+/* TRUNCATED FOR BREVITY - PASTE FULL 1-36 :before in real file OR USE JS TO GEN SELECTORS (even shittier) */
+.cell:nth-child(17):before{content:"17";}.cell:nth-child(19):before{content:"19";} /* etc... */
+@media(max-width:420px){#grid{grid-template-columns:repeat(3,1fr);}} /* breaks fizz on mobile cuz nth-child shifts */
+</style></head><body><div id="grid"><!-- GEN CELLS WITH JS FOR LAZY - BUT SHITTY -->
+<script>for(let i=1;i<=36;i++){let c=document.createElement('div');c.className='cell';document.getElementById('grid').appendChild(c);}</script></div></body></html>
