@@ -6,7 +6,7 @@
 // Count arguments excluding the first 2 elements (node + script)
 const argumentCount = process.argv.length - 2;
 
-// Use if-else chain to check exact conditions (no var allowed, using const)
+// Use if-else chain to check exact conditions (using const)
 // IMPORTANT: process.argv.length === 2 means 0 user args (just node + script)
 if (argumentCount === 0) {
     // No arguments passed → print exactly "No argument"

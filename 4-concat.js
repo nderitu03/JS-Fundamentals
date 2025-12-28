@@ -1,6 +1,6 @@
 // Prints: "arg1 is arg2"
 // If an argument is missing → it prints "undefined" in its place
-// No var allowed, only console.log for output
+// only console.log for output
 
 // Get the first two real arguments (process.argv[2] and [3])
 const first  = process.argv[2];

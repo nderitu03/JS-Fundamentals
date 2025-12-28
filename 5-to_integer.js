@@ -1,6 +1,6 @@
 // Prints "My number: <integer>" if the first argument can be converted to an integer
 // Otherwise prints "Not a number"
-// No var, no try/catch allowed
+// no try/catch allowed
 
 // Get the first real argument
 const arg = process.argv[2];

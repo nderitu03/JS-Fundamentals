@@ -1,6 +1,6 @@
 // Prints the first argument passed to the script
 // or "No argument" if nothing was passed
-// Constraints: no var, no .length allowed
+// Constraints:  no .length allowed
 
 // process.argv[2] is always the first real argument (if it exists)
 const firstArg = process.argv[2];
