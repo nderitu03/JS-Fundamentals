@@ -16,4 +16,3 @@ if (firstArg === undefined) {
 // Why this works:
 // - When no args: process.argv = [node, script] → index 2 is undefined
 // - When args:    process.argv = [node, script, "School", ...] → index 2 = "School"
-// - We never use .length or var → fully compliant
